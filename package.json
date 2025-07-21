@@ -1,0 +1,23 @@
+{
+  "name": "solar-system-3d",
+  "version": "1.0.0",
+  "description": "Interactive 3D Solar System simulation with Three.js",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve -s .",
+    "dev": "npx vite",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "three": "^0.160.0",
+    "gsap": "^3.12.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "serve": "^14.2.1"
+  },
+  "keywords": ["three.js", "solar-system", "3d", "animation", "webgl"],
+  "author": "Your Name",
+  "license": "MIT"
+}
