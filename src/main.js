@@ -16,7 +16,7 @@ const PLANET_DATA = [
     orbit: 25,
     speed: 0.04,
     rotationSpeed: 0.01,
-    texture: "textures/mercury.jpg",
+    texture: "./textures/mercury.jpg",
     info: "Closest planet to the Sun. Extremely hot days, freezing nights.",
   },
   {
@@ -26,7 +26,7 @@ const PLANET_DATA = [
     orbit: 32,
     speed: 0.015,
     rotationSpeed: -0.005,
-    texture: "textures/venus.jpg",
+    texture: "./textures/venus.jpg",
     info: "Hottest planet due to greenhouse effect. Rotates backwards.",
   },
   {
@@ -36,7 +36,7 @@ const PLANET_DATA = [
     orbit: 42,
     speed: 0.01,
     rotationSpeed: 0.02,
-    texture: "textures/earth.jpg",
+    texture: "./textures/earth.jpg",
     info: "Our home planet. The only known planet with life.",
   },
   {
@@ -46,7 +46,7 @@ const PLANET_DATA = [
     orbit: 52,
     speed: 0.008,
     rotationSpeed: 0.018,
-    texture: "textures/mars.jpg",
+    texture: "./textures/mars.jpg",
     info: "The Red Planet. Has the largest volcano in the solar system.",
   },
   {
@@ -56,7 +56,7 @@ const PLANET_DATA = [
     orbit: 72,
     speed: 0.005,
     rotationSpeed: 0.04,
-    texture: "textures/jupiter.jpg",
+    texture: "./textures/jupiter.jpg",
     info: "Largest planet. Great Red Spot is a storm larger than Earth.",
   },
   {
@@ -66,7 +66,7 @@ const PLANET_DATA = [
     orbit: 95,
     speed: 0.0038,
     rotationSpeed: 0.038,
-    texture: "textures/saturn.jpg",
+    texture: "./textures/saturn.jpg",
     info: "Famous for its beautiful ring system. Less dense than water.",
   },
   {
@@ -76,7 +76,7 @@ const PLANET_DATA = [
     orbit: 118,
     speed: 0.0027,
     rotationSpeed: 0.03,
-    texture: "textures/uranus.jpg",
+    texture: "./textures/uranus.jpg",
     info: "Ice giant that rotates on its side. Has faint rings.",
   },
   {
@@ -86,7 +86,7 @@ const PLANET_DATA = [
     orbit: 140,
     speed: 0.0022,
     rotationSpeed: 0.032,
-    texture: "textures/neptune.jpg",
+    texture: "./textures/neptune.jpg",
     info: "Windiest planet with speeds up to 2,100 km/h.",
   },
 ];
@@ -208,7 +208,7 @@ class SolarSystemSimulation {
 
   createSun() {
     const sunGeometry = new THREE.SphereGeometry(8, 32, 32);
-    const sunTexture = this.textureLoader.load("textures/sun.jpg");
+    const sunTexture = this.textureLoader.load("./textures/sun.jpg");
     const sunMaterial = new THREE.MeshBasicMaterial({
       map: sunTexture,
     });

@@ -1,5 +1,6 @@
 {
   "name": "solar-system-3d",
+  "homepage": "https://JayeshRajbhar.github.io/3D_Solar_System/",
   "version": "1.0.0",
   "description": "Interactive 3D Solar System simulation with Three.js",
   "main": "index.html",
@@ -7,17 +8,26 @@
   "scripts": {
     "start": "npx serve -s .",
     "dev": "npx vite",
-    "install-deps": "npm install"
+    "install-deps": "npm install",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "three": "^0.160.0",
-    "gsap": "^3.12.2"
+    "gsap": "^3.12.2",
+    "three": "^0.160.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "serve": "^14.2.1"
+    "gh-pages": "^6.3.0",
+    "serve": "^14.2.1",
+    "vite": "^5.0.0"
   },
-  "keywords": ["three.js", "solar-system", "3d", "animation", "webgl"],
+  "keywords": [
+    "three.js",
+    "solar-system",
+    "3d",
+    "animation",
+    "webgl"
+  ],
   "author": "Your Name",
   "license": "MIT"
 }
