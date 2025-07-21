@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Solar System - Interactive Space Simulation</title>
+    <meta
+      name="description"
+      content="Interactive 3D Solar System simulation with realistic planetary orbits and controls"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "gsap": "https://unpkg.com/gsap@3.12.2/index.js"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CLxPoeCH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B5KEFhtn.css">
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <p>Loading Solar System...</p>
+        <div class="loading-progress">
+          <div class="loading-bar" id="loading-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Controls Panel -->
+    <div id="controls-panel" class="controls-panel">
+      <div class="controls-header">
+        <h2>Solar System Controls</h2>
+        <button id="toggle-controls" class="toggle-btn">−</button>
+      </div>
+
+      <div class="controls-content">
+        <!-- Animation Controls -->
+        <div class="control-section">
+          <h3>Animation</h3>
+          <div class="control-row">
+            <button id="play-pause-btn" class="control-button">⏸️ Pause</button>
+            <button id="reset-btn" class="control-button">🔄 Reset</button>
+            <button id="theme-toggle" class="control-button">🌙 Dark</button>
+          </div>
+        </div>
+
+        <!-- Speed Controls -->
+        <div class="control-section">
+          <h3>Planet Speeds</h3>
+          <div id="speed-controls"></div>
+        </div>
+
+        <!-- Camera Controls -->
+        <div class="control-section">
+          <h3>Camera</h3>
+          <div class="control-row">
+            <button id="reset-camera" class="control-button">
+              📷 Reset View
+            </button>
+            <button id="top-view" class="control-button">⬆️ Top View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div id="info-panel" class="info-panel">
+      <div id="fps-counter">FPS: 60</div>
+      <div id="planet-info">Click on a planet for details</div>
+    </div>
+
+    <!-- Planet Tooltip -->
+    <div id="planet-tooltip" class="planet-tooltip"></div>
+
+    <!-- Error Fallback -->
+    <div id="webgl-error" class="error-message" style="display: none">
+      <h2>WebGL Not Supported</h2>
+      <p>
+        Your browser doesn't support WebGL, which is required for this 3D
+        simulation.
+      </p>
+    </div>
+
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js"
+        }
+      }
+    </script>
+  </body>
+</html>
