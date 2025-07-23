@@ -8,14 +8,14 @@ An interactive, animated 3D solar system built with Three.js. Explore and contro
 
 ## ✨ Features
 
-* 3D orbits and self-rotation for all 8 planets
-* Realistic textures and a glowing Sun
-* Adjustable planetary speeds (slider controls)
-* Pause/play animation and reset system
-* Camera controls (drag to orbit, scroll to zoom)
-* Light/dark theme toggle
-* Starfield background for extra realism
-* Responsive—works on mobile and desktop
+- 3D orbits and self-rotation for all 8 planets
+- Realistic textures and a glowing Sun
+- Adjustable planetary speeds (slider controls)
+- Pause/play animation and reset system
+- Camera controls (drag to orbit, scroll to zoom)
+- Light/dark theme toggle
+- Starfield background for extra realism
+- Responsive—works on mobile and desktop
 
 ## 🗂️ Project Structure
 
@@ -34,18 +34,18 @@ An interactive, animated 3D solar system built with Three.js. Explore and contro
 │   └── camera.js
 ```
 
-* `index.html`: App entry point
-* `src/`: JavaScript files and main logic
-* `styles/`: CSS styles
-* `public/textures/`: All planet and Sun images
+- `index.html`: App entry point
+- `src/`: JavaScript files and main logic
+- `styles/`: CSS styles
+- `public/textures/`: All planet and Sun images
 
 ## 🛠️ Installation
 
-***No installation needed to run the live demo. To run locally:***
+**_No installation needed to run the live demo. To run locally:_**
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone https://github.com/JayeshRajbhar/3D_Solar_System.git
+cd 3D_Solar_System
 npm install
 npm run dev
 # or: npx vite
@@ -62,12 +62,12 @@ npm run build
 npm run deploy
 ```
 
-*Ensure your textures are in the `public/textures/` folder before building.*
+_Ensure your textures are in the `public/textures/` folder before building._
 
 ## 🖼️ Credits
 
-* Three.js for 3D rendering
-* Solar System Scope Textures for planet maps
+- Three.js for 3D rendering
+- Solar System Scope Textures for planet maps
 
 ## 📄 License
 
