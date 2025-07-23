@@ -4,7 +4,7 @@ An interactive, animated 3D solar system built with Three.js. Explore and contro
 
 ## 🚀 Live Demo
 
-**👉 View the Solar System here** *(Replace this with your deployed link)*
+**👉 View the Solar System here:** *https://jayeshrajbhar.github.io/3D_Solar_System/*
 
 ## ✨ Features
 
